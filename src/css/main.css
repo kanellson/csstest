@@ -84,7 +84,7 @@ main {
 .navbar_menu > ul > li:nth-child(1) > a {
 	color: #54b4a6;
 }
-.navbar_menu > ul > li > span {
+.navbar_menu > ul > li > a {
 	position: relative;
 	display: flex;
 	padding: 0 1rem;
@@ -107,7 +107,12 @@ main {
 	z-index: 100;
 	background-color: #353b52;
 }
-.navbar_menu > ul > li:hover .submenu {
+/* .navbar_menu > ul > li:hover .submenu {
+	opacity: 1;
+	visibility: visible;
+} */
+
+.navbar_menu .submenu.show_submenu {
 	opacity: 1;
 	visibility: visible;
 }
@@ -169,10 +174,10 @@ main {
 	visibility: hidden;
 	background-color: #293246;
 }
-.navbar_menu > ul > li:hover .megamenu {
+/* .navbar_menu > ul > li:hover .megamenu {
 	opacity: 1;
 	visibility: visible;
-}
+} */
 
 /* box_megamenu */
 .box_megamenu {
